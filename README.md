@@ -66,7 +66,7 @@ Requiere **Python 3.8+**.
 Una vez instalado, desde CUALQUIER terminal en CUALQUIER carpeta:
 
 ```bash
-4nth0
+py -m anth0.cli
 ```
 
 Esto abre el menu interactivo. Eliges el numero del modulo y sigues las instrucciones en pantalla. Cada resultado se puede exportar a un reporte en formato JSON.
