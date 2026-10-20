@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "4nth0"
+version = "1.0.0"
+description = "4NTH0 - Suite de ciberseguridad y pentesting en terminal (uso etico y autorizado unicamente)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Anthony" }]
+dependencies = [
+    "requests>=2.28.0",
+    "dnspython>=2.3.0",
+    "colorama>=0.4.6",
+    "python-whois>=0.8.0",
+]
+
+[project.scripts]
+4nth0 = "anth0.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["anth0*"]
+
+[tool.setuptools.package-data]
+"anth0" = ["wordlists/*.txt"]
